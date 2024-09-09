@@ -24,3 +24,6 @@ media/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+
+#git rm -r --cached venv/
