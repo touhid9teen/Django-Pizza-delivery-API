@@ -26,4 +26,4 @@ media/
 Thumbs.db
 
 
-#git rm -r --cached venv/
+
