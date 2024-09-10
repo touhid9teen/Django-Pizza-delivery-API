@@ -10,7 +10,7 @@ from .serializers import UserSerializer, LoginSerializer
 from .models import User
 
 
-class Authenticate(APIView):
+class Registation(APIView):
 
 
     def post(self, request):

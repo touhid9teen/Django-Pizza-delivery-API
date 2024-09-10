@@ -29,6 +29,7 @@ class UserSerializer(serializers.ModelSerializer):
 
         return data
 
+
 class LoginSerializer(serializers.Serializer):
     email = serializers.EmailField(max_length=25)
     password = serializers.CharField(min_length=8)
