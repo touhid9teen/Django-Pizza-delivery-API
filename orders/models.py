@@ -25,4 +25,4 @@ class Order(models.Model):
     order_type = models.CharField(max_length=20, choices=order_type, default=order_type[0][0])
 
     def __str__(self):
-        return  f'f< Order is {self.size} is created at {self.created_at} by {self.user}'
+        return  f'< Order is {self.size} is created at {self.created_at} by {self.user}>'

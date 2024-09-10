@@ -7,7 +7,6 @@ class AuthenticationConfig(AppConfig):
 
 '''
 git rm -r --cached venv/
-git rm -r --cached .env
 git rm -r --cached db.sqlite3
 git rm -r --cached static/
 git rm -r --cached media/
