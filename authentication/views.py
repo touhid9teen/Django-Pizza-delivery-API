@@ -48,4 +48,12 @@ class Login(APIView):
         token = jwt.encode(payload, SECRET_KEY, algorithm='HS256')
         return token
 
+class Users(APIView):
+    authentication_classes = []
+    def get(self, request):
+        users = User.objects.all()
+        serializer = UserSerializer(users, many=True)
+        return Response(serializer.data)
+
+
 
