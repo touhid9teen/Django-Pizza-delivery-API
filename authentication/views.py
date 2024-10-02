@@ -55,5 +55,14 @@ class Users(APIView):
         serializer = UserSerializer(users, many=True)
         return Response(serializer.data)
 
+class AllUsers(APIView):
+    authentication_classes = []
+    def get(self, request):
+        number_of_user = User.objects.count()
+        return Response({'number_of_user': number_of_user})
+
+
+
+
 
 
